@@ -408,9 +408,20 @@
         <div class="ticket-card-event-name">
             Первенство России по спортивной (греко-римской) борьбе среди юниоров до 21 года
         </div>
-            <div class="ticket-card-datetime">9:00 - 20:00, 28.02.26</div>
-         <div id="tkt-qr" style="width:200px;height:200px;margin:0 auto;"></div><script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script><script>QRCode.toCanvas(document.getElementById("tkt-qr"),"https://knyazzz1.github.io/bilet11/?&kangaroo=blushing&bloomers=uptight&reduction=acrid&belgian=beautiful&omega=sore&melody=eminent&atom=absorbed&note=stereotyped&disembodiment=nonstop&league=wry&bathtub=tasty&overcharge=inexpensive&blinker",{width:400,margin:0,errorCorrectionLevel:'H'},function(error){if(error)console.error(error);});</script>
-         </div>        
+           <div id="tkt-qr" style="width:100px; height:100px; margin:0 auto;"></div>
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"><
+/script>
+<script>
+new QRCode(document.getElementById("tkt-qr"), {
+    text: "https://knyazzz1.github.io/bilet11/?&kangaroo=blushing&bloomers=uptight&reduction=acrid&belgian=beautiful&omega=sore&melody=eminent&atom=absorbed&note=stereotyped&disembodiment=nonstop&league=wry&bathtub=tasty&overcharge=inexpensive&blinker",
+    width: 600,
+    height: 600,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+});
+</script>        
         
         <table class="ticket-info-table">
             <tbody>
