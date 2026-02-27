@@ -410,7 +410,16 @@
         </div>
             <div class="ticket-card-datetime">9:00 - 20:00, 28.02.26</div>
 
-        <div id="tkt-qr" style="width:200px;height:200px;margin:0 auto;"></div><script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script><script>QRCode.toCanvas(document.getElementById("tkt-qr"),"https://knyazzz1.github.io/bilet11/?&kangaroo=blushing&bloomers=uptight&reduction=acrid&belgian=beautiful&omega=sore&melody=eminent&atom=absorbed&note=stereotyped&disembodiment=nonstop&league=wry&bathtub=tasty&overcharge=inexpensive&blinker",{width:400,margin:0,errorCorrectionLevel:'H'},function(error){if(error)console.error(error);});</script>
+        <div class="ticket-qrcode d-flex justify-content-center">
+         <div id="tkt-qr" style="width:200px;height:200px;margin:0 auto;"></div><script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script><script>QRCode.toCanvas(document.getElementById("tkt-qr"),"https://knyazzz1.github.io/bilet11/?&kangaroo=blushing&bloomers=uptight&reduction=acrid&belgian=beautiful&omega=sore&melody=eminent&atom=absorbed&note=stereotyped&disembodiment=nonstop&league=wry&bathtub=tasty&overcharge=inexpensive&blinker",{width:400,margin:0,errorCorrectionLevel:'H'},function(error){if(error)console.error(error);});</script>
+            <script>
+            $("#tkt-qr").kendoQRCode({
+                value: "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://knyazzz1.github.io/bilet11/?&kangaroo=blushing&bloomers=uptight&reduction=acrid&belgian=beautiful&omega=sore&melody=eminent&atom=absorbed&note=stereotyped&disembodiment=nonstop&league=wry&bathtub=tasty&overcharge=inexpensive&blinker",
+                size: $("#tkt-qr").width()
+            })
+            </script>
+        </div>        
+        
         <table class="ticket-info-table">
             <tbody>
                 <tr>
